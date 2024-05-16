@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./car1.css" />
+  <link rel="stylesheet" href="./responsive.css">
+  <link rel="shortcut icon" href="./img/main1.jpg" type="image/x-icon">
+  <title>Tachki center</title>
+</head>
+
+<body>
+
+
+
+  <header class="header1">
+    <nav id="nav" class="itens">
+      <button id="btnmobile">&equiv;</button>
+      <div class="logo">
+        <a>Tachki center</a>
+      </div>
+
+      <ul id="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="cars.html">Автомобили</a></li>
+        <div class="boton-contact">
+          <a href="index.html"><button>Связаться с нами</button></a>
+        </div>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div class="escrita">
+        <h1>BMW M8</h1>
+        <p> Competition <br>Coupe</p>
+      </div>
+      <div class="img-banner">
+        <img src="./img/car1.jpg" alt="" />
+      </div>
+    </div>
+
+    <section id="backgrounnd-3">
+
+      <div id="cars" class="head-cars">
+        <h1>Технические характеристики и особенности продукта</h1>
+      </div>
+      <div class="intro-cars">
+        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/Kt0VH2iULrw" title="The first-ever BMW M8 Gran Coupé. Official Launch Film. (F93. 2020)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p> Максимальная динамика движения и эксклюзивность.
+          Культовый стиль лежит в основе дизайна
+роскошных спортивных автомобилей, что является ярким свидетельством динамизма
+          и в то же время впечатляет солидностью. В салоне
+эффектные элементы M и роскошные детали создают спортивный вид.
+          и в то же время эксклюзивная атмосфера.
+        </p>
+        <div class="img-cars-banner">
+          <img src="./img/car1.1.png" width="1000" alt="">
+        </div>
+      </div>
+
+      <div class="container-section-3">
+
+        <div class="text-cars">
+          <p>8-цилиндровый двигатель M TwinPower Turbo мощностью 625 л.с.
+            Эксклюзивный дизайн и элементы оснащения.
+            625 л.с., 750 Нм, разгон от 0 до 100 км/ч за 3,2 секунды.</p>
+          <div class="img-car12-banner">
+            <img src="./img/car1.2.webp"  alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="backgrounnd-2">
+
+      <div id="cars" class="other-cars">
+        <h1>Другие авто</h1>
+      </div>
+      <div class="container-section-2">
+        <div class="other1">
+          <p>BMW iX M60</p>
+          <img id="car2" src="./img/car2.0.png" width="550" alt="">
+        </div>
+        <script>
+          var button = document.getElementById("car2");
+          button.addEventListener("click", function() {
+            window.location.href = "car2.html";
+          });
+        </script>
+        <div class="other2">
+          <p>BMW X6 M</p>
+          <img id="car3" src="./img/car3.0.png" width="550" alt="">
+        </div>
+        <script>
+          var button = document.getElementById("car3");
+          button.addEventListener("click", function() {
+            window.location.href = "car3.html";
+          });
+        </script>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container-footer">
+
+        <div class="prime-car">
+          <h1>Tachki center</h1>
+        </div>
+
+        <div class="lista-footer">
+          <h1>Где мы находимся</h1>
+          <ul id="ul-footer">
+            <li><a>Беларусь</a></li>
+            <li><a>Россия</a></li>
+            <li><a>Испания</a></li>
+            <li><a>Италия</a></li>
+            <li><a>Франция</a></li>
+            <li><a>Германия</a></li>
+            <li><a>Казахстан</a></li>
+          </ul>
+        </div>
+
+        <div class="lista2-footer">
+          <h1>Быстрые ссылки</h1>
+          <ul id="ul-footer-2">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="index.html">Связаться с нами</a></li>
+          </ul>
+        </div>
+
+        <div class="email-us">
+          <h1>Наш Email</h1>
+          <p>tachkicenter@gmail.com</p>
+        </div>
+
+        <div class="call">
+          <h1>Наш номер телефона</h1>
+          <div class="number">
+            <p> +123 45 678 90</p>
+            <p>+111 11 111 1111</p>
+          </div>
+          <div class="redes-sociais">
+            <a href="https://www.facebook.com/BMW/?locale=ru_RU" ><img src="./svg/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/bmw/"><img src="./svg/instagram.svg" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+</body>
+<script src="./script/burger.js"></script>
+
+</html>

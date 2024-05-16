@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+     <link rel="stylesheet" href="./responsive.css">
+      <link rel="shortcut icon" href="./img/main1.jpg" type="image/x-icon">
+     <title>Tachki center</title>
+    
+  </head>
+  <body>
+
+
+
+    <header class="header1">
+      <nav id="nav" class="itens">
+        <button id="btnmobile">&equiv;
+        </button>
+        <div class="logo">
+          <a>Tachki center</a>
+        </div>
+
+        <ul id="menu">
+          <li class="this"><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="cars.html">Автомобили</a></li>
+          <div class="boton-contact">
+            <a href="index.html"><button>Связаться с нами</button></a>
+          </div>
+        </ul>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="container">
+        <div class="escrita">
+          <h1>Хорошее качество, приятные цены</h1>
+          <p>
+            Для тех, кто хочет ездить<br>красиво и удобно.
+            <br>Самый лучший навсегда.
+          </p>
+        </div>
+        <div class="img-banner">
+          <img id="image" alt="" />
+        </div>
+      </div>
+      <script>// Получаем ссылку на элемент img
+        const imageElement = document.getElementById('image');
+        
+        // Создаем новый XMLHttpRequest объект
+        const xhr = new XMLHttpRequest();
+        
+        // Открываем XML файл
+        xhr.open('GET', 'img.xml', true);
+        
+        // Отправляем запрос на сервер
+        xhr.send();
+        
+        // Ожидаем ответ от сервера
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // XML успешно загружен
+              const xmlDoc = xhr.responseXML;
+        
+              // Получаем ссылку на тег img в XML
+              const imgSrc = xmlDoc.getElementsByTagName('img')[0].getAttribute('src');
+        
+              // Задаем src атрибут картинке в HTML
+              imageElement.src = imgSrc;
+            } else {
+              // Произошла ошибка при загрузке XML
+              console.error('Ошибка загрузки XML:', xhr.status);
+            }
+          }
+        };</script>
+
+     
+
+
+      <section id="contact" id="backgrounnd-3">
+        <div class="container-section-5">
+          <div class="contactus">
+            <h1>СВЯЗЬ С НАМИ</h1>
+            <p>Чтобы узнать больше информации об автомобилях и ценовых предложениях,<br>заполните форму на боковой панели или свяжитесь с нами по телефону.</p>
+          </div>
+
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+          <form id="contact-form">
+            <div class="nome-email">
+              <input type="text" name="name" id=""  required placeholder="Ваше имя">
+               <input type="email" name="email" id="" required placeholder="Ваш Email">
+            </div>
+
+            <div class="telephone-country">
+              <input type="number" name="number" id="" placeholder="Номер телефона">
+              <input type="text" name="country" id="" placeholder="Страна">
+            </div>
+
+            <div class="message">
+              <input type="text" name="message" id="" placeholder="Сообщение">
+            </div>
+            <div class="boton-contact">
+              <button type="submit">Подтвердить</button>
+            </div>
+          </form>
+          <div id="success-message" style="display: none; color: green;">Отправлено! Ожидайте ответа.</div>
+        </div>
+        </div>
+          <div id="map" style="width: 600px; height: 400px;"></div>       
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+
+        <div class="prime-car">
+          <h1>Tachki center</h1>
+        </div>
+
+        <div class="lista-footer">
+          <h1>Где мы находимся</h1>
+          <ul id="ul-footer">
+            <li><a>Беларусь</a></li>
+            <li><a>Россия</a></li>
+            <li><a>Испания</a></li>
+            <li><a>Италия</a></li>
+            <li><a>Франция</a></li>
+            <li><a>Германия</a></li>
+            <li><a>Казахстан</a></li>
+          </ul>
+        </div>
+
+        <div class="lista2-footer">
+          <h1>Быстрые ссылки</h1>
+          <ul id="ul-footer-2">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="index.html">Связаться с нами</a></li>
+          </ul>
+        </div>
+
+        <div class="email-us">
+          <h1>Наш Email</h1>
+          <p>tachkicenter@gmail.com</p>
+        </div>
+
+        <div class="call">
+          <h1>Наш номер телефона</h1>
+          <div class="number">
+            <p>+123 45 678 90</p>
+            <p>+111 11 111 1111</p>
+          </div>
+          <div class="redes-sociais">
+           <a href="https://www.facebook.com/BMW/?locale=ru_RU" ><img src="./svg/facebookwhite.svg" alt=""></a>
+           <a href="https://www.instagram.com/bmw/"><img src="./svg/instagramwhite.svg" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=Ваш_API_ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="./script/burger.js"></script>
+  <script src="./script/map.js"></script>
+  <script src="./script/valid.js"></script>
+</html>

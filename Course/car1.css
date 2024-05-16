@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Poppins:wght@600&display=swap');
+
+/*  font site */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+p {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    align-items : center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    z-index: 99999999;
+    background-color: aliceblue;
+}
+
+nav {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: rgb(13, 0, 255);
+}
+
+.logo a {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.logo a:hover {
+    color: rgb(13, 0, 255);
+}
+
+.boton-contact button {
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 6px;
+
+}
+
+.boton-contact button:hover {
+    color: rgb(13, 0, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/* Main - BANNER */
+main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.img-banner img {
+    width: 100%;
+    height: 790px;
+    object-fit:cover;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.escrita {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+}
+
+.escrita h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.escrita p {
+    font-size: 35px;
+
+}
+/*cars*/
+.container-section-3 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.intro-cars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.intro-cars p {
+    color: rgb(0, 0, 0);
+   font-weight:400;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+     padding: 5px;
+     font-size: 30px;
+}
+.head-cars {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    line-height: 40px;
+}
+.head-cars h1 {
+    text-indent: 40px;
+    padding: 10px;
+    font-size: 55px;
+}
+.text-cars {
+    color: rgb(0, 0, 0);
+    font-weight:300;
+    font-size: 30px;
+      display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.text-cars p {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.img-car12-banner {
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-car12-banner img{
+    width: 100%;
+    transition: 0.3s;
+}
+.img-car12-banner img:hover {
+    opacity: 0.6;
+    transform: scale(1.15);
+}
+
+.img-cars-banner {
+    
+    margin-bottom: 30px;
+}
+
+.img-cars-banner img {
+   
+    transition: 0.3s;
+
+}
+
+.img-cars-banner img:hover {
+    opacity: 0.6;
+}
+
+
+/*cars*/
+#backgrounnd-2{
+    background-color: #d8d8d8;
+}
+.container-section-2 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.car p {
+    font-family: 'Montserrat';
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+.other-cars {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.other-cars h1 {
+    font-size: 55px;
+    padding-top: 40px;
+}
+
+.other1 {
+   margin: auto;
+   position: relative;
+  overflow: hidden;
+}
+
+.other1 p {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.other1 img {
+   display: block;
+   margin: auto;
+    transition: 0.5s;
+
+}
+
+.other1 img:hover {
+    opacity: 0.6;
+    transform: scale(1.15);
+}
+
+.other2 {
+    margin:auto ;
+    position: relative;
+  overflow: hidden;
+}
+
+.other2 p {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.other2 img {
+    display: block;
+   margin: auto;
+    transition: 0.5s;
+
+}
+
+.other2 img:hover {
+    opacity: 0.6;
+    transform: scale(1.15);
+}
+
+
+/* footer */
+footer {
+    padding-top: 50px;
+    background-color: #d8d8d8;
+    width: 100%;
+    height: 100%;
+}
+
+.container-footer {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+.prime-car h1 {
+    transition: 0.3s;
+    cursor: default;
+    font-size: 80px;
+    text-align: center;
+}
+
+.prime-car h1:hover {
+    color: rgba(104, 104, 104, 0.281);
+}
+
+
+#ul-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#ul-footer li a {
+    color: gray;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#ul-footer li a:hover {
+    color: rgba(0, 0, 0, 0.281);
+}
+
+
+.lista-footer h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.lista-footer h1:hover {
+    color: rgba(0, 0, 0, 0.281);
+}
+
+
+
+/* Quick Links*/
+
+#ul-footer-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#ul-footer-2 li a {
+    color: gray;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#ul-footer-2 li a:hover {
+    color: rgba(0, 0, 0, 0.281);
+}
+
+
+.lista2-footer h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.lista2-footer h1:hover {
+    color: rgba(0, 0, 0, 0.281);
+}
+
+/* Email */
+
+.email-us {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-us h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.email-us h1:hover {
+    color: rgba(0, 0, 0, 0.281);
+}
+
+.email-us p {
+    color: gray;
+}
+
+.call h1{
+    margin-bottom: 20px;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: default;
+}
+
+
+.call h1:hover {
+    color: rgba(0, 0, 0, 0.281);
+}
+
+.number {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.redes-sociais img {
+    cursor: pointer;
+    width: 30px;
+}

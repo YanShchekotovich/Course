@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./about.css" />
+     <link rel="stylesheet" href="./responsive.css">
+      <link rel="shortcut icon" href="./img/main1.jpg" type="image/x-icon">
+     <title>Tachki center</title>
+  </head>
+  <body>
+
+
+
+    <header class="header1">
+      <nav id="nav" class="itens">
+        <button id="btnmobile">&equiv;
+        </button>
+        <div class="logo">
+          <a>Tachki center</a>
+        </div>
+
+        <ul id="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li class="this"><a href="about.html">О нас</a></li>
+          <li><a href="cars.html">Автомобили</a></li>
+          <div class="boton-contact">
+            <a href="index.html"><button>Связаться с нами</button></a>
+          </div>
+        </ul>
+
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="escrita">
+        <h1>Хорошее качество, приятные цены</h1>
+        <p>
+          Для тех, кто хочет ездить<br>красиво и удобно.
+          <br>Самый лучший навсегда.
+        </p>
+      </div>
+      <div class="img-banner">
+        <img id="image" alt="" />
+      </div>
+    </div>
+    <script>// Получаем ссылку на элемент img
+      const imageElement = document.getElementById('image');
+      
+      // Создаем новый XMLHttpRequest объект
+      const xhr = new XMLHttpRequest();
+      
+      // Открываем XML файл
+      xhr.open('GET', 'img.xml', true);
+      
+      // Отправляем запрос на сервер
+      xhr.send();
+      
+      // Ожидаем ответ от сервера
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            // XML успешно загружен
+            const xmlDoc = xhr.responseXML;
+      
+            // Получаем ссылку на тег img в XML
+            const imgSrc = xmlDoc.getElementsByTagName('img')[0].getAttribute('src');
+      
+            // Задаем src атрибут картинке в HTML
+            imageElement.src = imgSrc;
+          } else {
+            // Произошла ошибка при загрузке XML
+            console.error('Ошибка загрузки XML:', xhr.status);
+          }
+        }
+      };</script>
+
+      <section id="backgrounnd">
+        <div id="about" class="about">
+          <h1>О НАС</h1>
+        </div>
+        <div class="container-section-1">
+          <div class="text-about">
+            <p>
+              Мы гордимся своей способностью удовлетворять желания наших клиентов, помогая им найти автомобиль, который они хотят,
+              и, самое главное, по цене, соответствующей их бюджету.
+              Наша приверженность исключительному обслуживанию клиентов основана на нашем внимательном подходе к нашим клиентам и
+              обеспечении того, чтобы мы удовлетворяли их конкретные потребности. 
+                <br />
+              <br />
+              Даже если вы решите не делать покупки у нас, мы будем более чем рады предоставить вам бесплатные рекомендации по
+              на что обратить внимание при покупке подержанного автомобиля или грузовика. Наша философия заключается в том, чтобы угодить вам,
+              клиенту, предоставляя превосходный сервис и предлагая автомобили высочайшего качества по оптовым ценам.
+               <br />
+              <br />  
+              Располагая разнообразным ассортиментом транспортных средств и обширным опытом,
+              мы хорошо оснащены, чтобы удовлетворить ваши уникальные требования.
+              <br />
+              <br />
+            </p>
+          </div>
+
+          <div class="image-about">
+            <img src="./img/image-about.png" width="700" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container-footer">
+  
+          <div class="prime-car">
+            <h1>Tachki center</h1>
+          </div>
+  
+          <div class="lista-footer">
+            <h1>Где мы находимся</h1>
+            <ul id="ul-footer">
+              <li><a>Беларусь</a></li>
+              <li><a>Россия</a></li>
+              <li><a>Испания</a></li>
+              <li><a>Италия</a></li>
+              <li><a>Франция</a></li>
+              <li><a>Германия</a></li>
+              <li><a>Казахстан</a></li>
+            </ul>
+          </div>
+  
+          <div class="lista2-footer">
+            <h1>Быстрые ссылки</h1>
+            <ul id="ul-footer-2">
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="index.html">Связаться с нами</a></li>
+            </ul>
+          </div>
+  
+          <div class="email-us">
+            <h1>Наш Email</h1>
+            <p>tachkicenter@gmail.com</p>
+          </div>
+  
+          <div class="call">
+            <h1>Наш номер телефона</h1>
+            <div class="number">
+              <p> +123 45 678 90</p>
+              <p>+111 11 111 1111</p>
+            </div>
+            <div class="redes-sociais">
+              <a href="https://www.facebook.com/BMW/?locale=ru_RU" ><img src="./svg/facebookwhite.svg" alt=""></a>
+              <a href="https://www.instagram.com/bmw/"><img src="./svg/instagramwhite.svg" alt=""></a>
+            </div>
+          </div>
+  
+        </div>
+      </footer>
+    </body>
+    <script src="./script/burger.js"></script>
+  </html>
+  
